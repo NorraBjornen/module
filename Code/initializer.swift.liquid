@@ -1,0 +1,20 @@
+import Swinject
+import SwinjectAutoregistration
+
+class {{ module_info.name }}Initializer {
+
+	class func initialize(data: {{ module_info.name }}PresenterData) -> UIViewController? {
+		let controller = {{ module_info.name }}ViewController(nibName: "{{ module_info.name }}View", bundle: nil)
+        	controller.viewOutput = appContainer.resolve({{ module_info.name }}PresenterProtocol.self, argument: data)
+        	return controller
+	}
+
+	class func register(for container: Container) {
+        	container.autoregister(
+                	{{ module_info.name }}PresenterProtocol.self,
+                	argument: {{ module_info.name }}PresenterData.self,
+                	initializer: {{ module_info.name }}Presenter.init
+        	)
+	}
+
+}

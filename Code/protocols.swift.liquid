@@ -1,0 +1,16 @@
+import DoubleCore
+import RxSwift
+import RxCocoa
+import RxDataSources
+
+protocol {{ module_info.name }}ViewOutput: BaseViewOutput {
+	func didLoad()
+}
+
+protocol {{ module_info.name }}ModuleOutput: BaseModuleOutput {
+
+}
+
+protocol {{ module_info.name }}PresenterProtocol: {{ module_info.name }}ViewOutput {
+
+}

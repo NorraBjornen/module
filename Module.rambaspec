@@ -1,0 +1,22 @@
+# Template information section
+name: Module
+summary: Module
+author: Alex
+version: 1.0.0
+license: MIT
+
+# The declarations for code files
+code_files:
+- {name: .swift, path: Code/protocols.swift.liquid}
+- {name: Presenter.swift, path: Code/presenter.swift.liquid}
+- {name: View.swift, path: Code/view.swift.liquid}
+- {name: ViewController.swift, path: Code/viewController.swift.liquid}
+- {name: Initializer.swift, path: Code/initializer.swift.liquid}
+- {name: View.xib, path: Code/view.xib.liquid}
+
+# Template dependencies
+dependencies:
+- DoubleCore
+- RxSwift
+- RxCocoa
+- RxDataSources

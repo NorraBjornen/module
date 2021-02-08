@@ -1,0 +1,31 @@
+import DoubleCore
+import RxSwift
+import RxCocoa
+import RxDataSources
+
+struct {{ module_info.name }}PresenterData {
+
+}
+
+class {{ module_info.name }}Presenter: BaseScreenPresenter, {{ module_info.name }}PresenterProtocol {
+	
+	private unowned let moduleOutput: {{ module_info.name }}ModuleOutput
+	private let data: {{ module_info.name }}PresenterData
+
+	init(moduleOutput: {{ module_info.name }}ModuleOutput, data: {{ module_info.name }}PresenterData) {
+		self.moduleOutput = moduleOutput
+		self.data = data
+	}
+
+}
+
+extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
+	func didLoad() {
+
+	}
+}
+
+// MARK: - Private
+extension {{ module_info.name }}Presenter {
+	
+}

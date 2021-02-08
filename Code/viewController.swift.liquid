@@ -1,0 +1,21 @@
+import DoubleCore
+import RxSwift
+import RxCocoa
+import RxDataSources
+
+class {{ module_info.name }}ViewController: BaseViewController<{{ module_info.name }}View>, ControllerOutput {
+	
+	typealias Output = {{ module_info.name }}ViewOutput
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+
+		output?.didLoad()
+	}
+
+}
+
+// MARK: - Private
+extension {{ module_info.name }}ViewController {
+
+}
