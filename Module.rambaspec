@@ -1,6 +1,6 @@
 # Template information section
-name: Module
-summary: Module
+name: module
+summary: module template
 author: Alex
 version: 1.0.0
 license: MIT
